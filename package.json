@@ -1,0 +1,24 @@
+{
+  "name": "netflixserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "supervisor index.js",
+    "start": "node index.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix netflixC && npm run build --prefix netflixC"
+  },
+  "author": "rishabh",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongodb": "^4.6.0",
+    "mongoose": "^6.0.13",
+    "supervisor": "^0.12.0"
+  }
+}

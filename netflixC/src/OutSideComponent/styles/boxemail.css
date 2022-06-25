@@ -1,0 +1,710 @@
+.back_image {
+  height: auto;
+  background-color: #090B09;
+}
+
+.netflixlogo {
+  height: 30px;
+}
+
+.header {
+  padding-bottom: 170px;
+}
+
+.language {
+  border: 1px solid white;
+  padding: 6px;
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+}
+
+.signInbtn {
+  color: white;
+  background-color: rgb(207, 18, 18);
+  padding: 6px;
+  border-radius: 5px;
+  width: 81px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+}
+
+.signInbtn:hover {
+  color: white;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+.title_text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.2rem;
+  word-spacing: 4px;
+  color: white;
+}
+
+.title_para {
+  color: white;
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.title_down {
+  color: white;
+  word-spacing: 2px;
+  font-size: 1.1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.form-control {
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 2px;
+}
+
+input[type] {
+  font-family: 'Roboto', sans-serif;
+}
+
+.form-floating>label {
+  font-weight: 400;
+  color: #8c8c8c;
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.emailBtn {
+  background-color: rgb(207, 18, 18);
+  color: white;
+  padding: 1px;
+  width: 304px;
+  border-radius: 3px;
+  font-size: 1.7rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.emailBtn:hover {
+  color: white;
+  background-color: red;
+}
+
+.emaReq {
+  color: #ffa00a;
+  padding: 6px 3px;
+  font-size: 15px;
+}
+
+.footer {
+  /* background-color: black; */
+  border-top: 3px solid rgb(189, 189, 189);
+  margin-top: 120px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap');
+
+.questionCall {
+  color: #757375;
+  font-family: 'Shippori Antique B1', sans-serif;
+}
+
+.questionCall span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  font-family: 'Shippori Antique B1', sans-serif;
+}
+
+.footerlist {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.footer li {
+  font-size: 0.8rem;
+  padding-bottom: 14px;
+  color: gray;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footerlist li span:hover {
+  cursor: pointer;
+  border-bottom: 1px solid gray;
+}
+
+/* up code is BoxEmail component  */
+/* Login Page Component  */
+
+.back_imageLogin {
+  background-color: #000000e5;
+}
+
+.netflixlogoLogin {
+  height: 45px;
+}
+
+.loginPageborder {
+  padding-top: 60px;
+  padding-right: 68px;
+  padding-bottom: 40px;
+  padding-left: 68px;
+  width: 34%;
+  background-color: #212121;
+  border-radius: 5px;
+}
+
+.logsignin span {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.loginput {
+  background-color: #333333;
+  /* margin-bottom: 20px;   */
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  border: 1px solid black;
+}
+
+.loginwarn {
+  /* display: none; */
+  color: #e87c03;
+  margin-bottom: -6px;
+  padding: 2px 3px;
+  font-size: 13px;
+}
+
+.notFoundSec {
+  background-color: #E87C03;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 20px 10px;
+  color: #fff;
+  padding: 8px 20px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  /* text-align: justify; */
+}
+
+.notFoundSec p {
+  margin-bottom: 0px;
+}
+
+.logibBtn {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 45px;
+  width: 100%;
+  border: 1px solid red;
+  padding: 11px;
+  background-color: #e50914;
+  font-size: 17px;
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.newNet {
+  color: gray;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.needHelp {
+  display: flex;
+  font-size: 14px;
+  color: gray;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+}
+
+.needHelp:hover {
+  text-decoration: underline;
+}
+
+/* SignUpRagistration Component */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.signIn {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-weight: 700;
+  font-size: 19px;
+}
+
+.devices {
+  height: 65px;
+  width: auto
+}
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
+.facc {
+  font-size: 2.3rem;
+  line-height: 49px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.perNet {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.nextBtn {
+  width: 25%;
+  border: 1px solid red;
+  padding: 14px;
+  background-color: #e50914;
+  font-size: 23px;
+  color: white;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.nextBtn:hover {
+  background-color: rgb(243, 26, 26);
+}
+
+.devicesSec {
+  margin-top: 140px;
+}
+
+.footerSignup {
+  margin-top: 140px;
+  background-color: #F3F3F3;
+  padding-top: 30px;
+  border-radius: 5px;
+}
+
+
+.footersilist {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.footersilist li {
+  color: #757575;
+  padding-bottom: 20px;
+  font-size: 14px;
+}
+
+.footersilist li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Password Component */
+
+.step {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8rem;
+  margin-bottom: 0px;
+}
+
+.netWel {
+  font-family: 'Roboto', sans-serif;
+  font-size: 34px;
+  line-height: 40px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.entpass {
+  font-size: 18px;
+  font-weight: 500;
+  color: #614c4c;
+}
+
+.passEmail {
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.passreq {
+  font-size: 13px;
+  color: #b92d2b;
+  font-weight: 500;
+}
+
+.forgetpassword span {
+  text-decoration: none;
+  color: #0071eb;
+}
+
+.forgetpassword span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+.ragiNext {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 25px;
+  width: 100%;
+  border: 1px solid red;
+  padding: 14px;
+  background-color: #e50914;
+  font-size: 24px;
+  color: white;
+  font-weight: 400;
+  border-radius: 5px;
+  letter-spacing: 0.03rem;
+}
+
+.ragiNext:hover {
+  background-color: rgb(243, 26, 26);
+}
+
+/* signup Component  */
+.planPara {
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.chekright li span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+}
+
+.chekright {
+  list-style-type: none;
+}
+
+.signUplink {
+  width: 86%;
+}
+
+.signupNext {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 25px;
+  width: 100%;
+  border: 1px solid red;
+  padding: 14px;
+  background-color: #e50914;
+  font-size: 24px;
+  color: white;
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+.signupNext:hover {
+  background-color: rgb(243, 26, 26);
+}
+
+/* Planform Component  */
+
+.planRecomend {
+  margin-bottom: 0px;
+  padding-left: 0px;
+  list-style-type: none;
+  font-family: sans-serif;
+}
+
+.planRecomend li {
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+.device_section {
+  position: sticky;
+  /* top: 20px !important; */
+  top: 0px;
+  background-color: white;
+  z-index: 1;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+.box-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: #e50914;
+  border-radius: 2px;
+  font-size: 17px;
+  color: white;
+  height: 120px;
+  width: 120px;
+  opacity: .6;
+}
+
+.box-1__active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: #e50914;
+  border-radius: 2px;
+  font-size: 17px;
+  color: white;
+  height: 120px;
+  width: 120px;
+  opacity: 1;
+}
+
+.box-1__active h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.box-1 h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+.col_1 {
+  font-size: 17px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  padding-right: 0px;
+  width: 39.2%;
+}
+
+.setWidth {
+  width: 60%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+.box-2 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  color: #737373;
+  fill: #737373;
+  width: 120px;
+}
+
+.box-2_active {
+  font-family: 'Shippori Antique B1', sans-serif;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  color: red;
+  fill: #737373;
+  width: 120px;
+}
+
+.box-2 span {
+  font-family: 'Shippori Antique B1', sans-serif;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.box-2 p {
+  font-family: 'Lato', sans-serif;
+  color: #737373;
+  fill: #737373;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 1px;
+  margin-bottom: 6px;
+  text-align: center;
+  z-index: -1;
+}
+
+.box-2 img {
+  height: 37px;
+  opacity: .6;
+  z-index: -1;
+}
+
+.box-2 svg {
+  height: 33px;
+  width: auto;
+  background-color: white;
+}
+
+.linkplan {
+  color: black;
+  text-decoration: none;
+}
+
+.linkplan:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+.planChoose {
+  font-size: 32px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
+
+.autopadd {
+  padding-left: 0px;
+  padding-right: 24px;
+}
+
+
+.horizontal {
+  border-top: 0.2px solid #CCCCCC;
+  padding-top: 20px;
+}
+
+.iconFont {
+  font-size: 13px;
+  margin-bottom: 0px;
+  font-weight: 600;
+  text-align: left;
+  opacity: .6;
+}
+
+.parasec {
+  font-size: 13px;
+  color: #737373;
+  font-weight: 500;
+}
+
+/* setUpPayment component  */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.member {
+  font-size: 18px;
+  color: #655757;
+  font-family: 'Roboto', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.members {
+  font-size: 18px;
+  color: color;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.secureServer {
+  font-size: 13px;
+}
+
+.linksetup {
+  text-decoration: none;
+}
+
+.paymentSection {
+  display: flex;
+  padding: 20px;
+  height: 70px;
+  border-radius: 6px;
+  border: 2px solid #D5D5D5;
+  width: 105%;
+}
+
+.paymentSection:hover {
+  cursor: pointer;
+}
+
+.paymentSection img {
+  padding-right: 8px;
+  height: 24px;
+}
+
+.cradit {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+/* CraditOption component  */
+
+.paymt img {
+  padding-right: 8px;
+  height: 22px;
+}
+
+.paymentSectionNext {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  height: 70px;
+  border-radius: 4px;
+  background-color: #F4F4F4;
+}
+
+.planmonth {
+  font-weight: 600;
+}
+
+.plan {
+  color: #887373;
+}
+
+.changeplan {
+  color: blue;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+
+.changeplan:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.authicate {
+  text-align: justify;
+  margin-top: 30px;
+  font-size: 13px;
+  color: #887373;
+  font-weight: 600;
+}
+
+/* UPI Payment component  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.upipara {
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.upiinfo {
+  font-family: 'Roboto', sans-serif;
+  color: #333333;
+  font-size: 16px;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.upiAttherate {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}

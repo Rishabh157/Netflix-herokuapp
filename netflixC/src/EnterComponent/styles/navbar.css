@@ -1,0 +1,443 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Navabar Component  */
+
+.netFlix__body {
+  overflow-x: hidden;
+  background-color: #141414;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.netflix_header {
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+
+.netflix_header_black {
+  background-color: #141414;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.l_nav li {
+  color: #e5e5e5;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.7s;
+}
+
+.l_nav li:hover {
+  color: #fff;
+  cursor: pointer;
+  opacity: .6;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap');
+
+.searchInput {
+  width: 154px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #999999;
+}
+
+.searchInput[placeholder] {
+  font-family: 'Shippori Antique', sans-serif;
+  background-color: #141414;
+  color: white;
+  font-weight: 500;
+}
+
+.section {
+  padding-right: 16px;
+}
+
+.section:hover {
+  cursor: pointer;
+}
+
+.dnArrow {
+  transition: all 0.5s;
+}
+
+.section:hover .dnArrow {
+  transform: rotate(180deg);
+}
+
+.profileSection {
+  background-color: black;
+  opacity: 0.9;
+  position: absolute;
+  top: 51px;
+  right: 33px;
+  width: 12%;
+  border: 1px solid rgb(88, 88, 88);
+  border-radius: 2px;
+  display: none;
+  transition: display 450ms;
+}
+
+.section:hover .profileSection {
+  display: block;
+}
+
+.SearchClass {
+  width: 42%;
+  position: fixed;
+  right: 380px;
+}
+
+/* Notification Component  */
+
+.notification {
+  background-color: black;
+  position: absolute;
+  top: 43px;
+  right: 144px;
+  height: 300px;
+  width: 28%;
+  border: 1px solid rgb(88, 88, 88);
+  border-radius: 2px;
+  border-top: 2px solid white;
+  display: none;
+  overflow-y: scroll;
+  transition: display 450ms;
+}
+
+.section:hover .notification {
+  display: block;
+}
+
+.notiData {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8px;
+  border-bottom: 1px solid rgba(85, 80, 80, 0.952);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+.notiData p {
+  font-family: 'Montserrat', sans-serif;
+  color: #cdcdcd;
+  font-size: 16px;
+  margin-bottom: 0px;
+  font-weight: 600;
+}
+
+.notiData span {
+  font-family: 'Montserrat', sans-serif;
+  color: #c3c3c3;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+.name {
+  font-family: 'Kanit', sans-serif;
+  font-size: 14px;
+  color: white;
+  font-weight: 500;
+}
+
+.border_line {
+  border-bottom: 1px solid rgba(85, 80, 80, 0.952);
+}
+
+.nav_svgs {
+  height: 25px;
+  width: 25px;
+  color: white;
+  fill: white;
+}
+
+.panel_text {
+  font-size: 15px;
+  color: white;
+  font-family: 'Kanit', sans-serif;
+  padding-left: 10px;
+}
+
+.panel_text:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.link_route {
+  color: white;
+  font-family: 'Kanit', sans-serif;
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+.link_route:hover {
+  cursor: pointer;
+  text-decoration: underline white;
+}
+
+.searchText {
+  font-family: 'Shippori Antique', sans-serif;
+  font-size: 15px;
+}
+
+.searchText span:hover {
+  color: red;
+}
+
+.searchData {
+  height: 250px;
+  width: auto;
+  transition: all 450ms;
+}
+
+.searchData:hover {
+  cursor: pointer;
+  transform: scale(1.13) !important;
+}
+
+/* Movies Component  */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+.title {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Roboto Mono', monospace;
+  padding-left: 34px;
+}
+
+.posters {
+  display: flex;
+  padding-top: 8px;
+  padding-left: 34px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory !important;
+}
+
+.posters::-webkit-scrollbar {
+  display: none !important;
+}
+
+.dataMovie {
+  object-fit: contain;
+  height: 181px;
+  margin-right: 10px;
+  border-radius: 4px;
+  transition: all 450ms;
+}
+
+.dataMovie:hover {
+  cursor: pointer;
+  transform: scale(1.09) !important;
+}
+
+.cut_video {
+  fill: gray;
+  transition: all 460ms;
+}
+
+.cut_video:hover {
+  cursor: pointer;
+  transform: scale(1.50);
+  fill: red;
+}
+
+/* Footer Component  */
+
+.svgIcons {
+  height: 25px;
+  width: 25px;
+  color: white;
+  fill: white;
+  transition: transform 450ms;
+}
+
+.svgIcons:hover {
+  fill: rgb(47, 0, 255);
+  transform: scale(2.02);
+}
+
+.nav_foo {
+  margin-top: 230px;
+}
+
+.footinfo li {
+  padding-top: 10px;
+  color: gray;
+  font-size: 13px;
+  font-weight: 200;
+  font-family: 'poppins', sans-serif;
+}
+
+.footinfo li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.foot_net span {
+  color: gray;
+  font-size: 15px;
+  font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Account Component  */
+.Section_Account {
+  background-color: #e6e6e6;
+  font-family: 'Roboto', sans-serif;
+}
+
+.member {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+.billing {
+  color: #757589;
+  font-weight: 600;
+  font-family: 'Rubik', sans-serif;
+}
+
+.mem_btn {
+  padding: 10px 27px;
+  font-family: 'Rubik', sans-serif;
+  border: none;
+  font-size: 14px;
+  background-color: #c3bcbc;
+  font-weight: 600;
+  color: gray;
+  transition: all 450ms;
+}
+
+.mem_btn:hover {
+  border: none;
+  background-color: black;
+  color: white;
+  transform: translateX(-5px);
+  box-shadow: 1px 2px 3px rgb(7, 7, 7);
+}
+
+.acc_gmail {
+  color: black;
+  font-weight: 800;
+}
+
+.acc_pass {
+  font-size: 16px;
+  font-weight: 500;
+  color: #797575;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.changing_plan {
+  color: blue;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.changing_plan:hover {
+  cursor: pointer;
+  text-decoration: underline blue;
+}
+
+.bill_info {
+  padding-top: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Banner Component  */
+.banner_stuff {
+  position: absolute;
+  width: 33%;
+  top: 244px;
+  left: 60px;
+  height: 286px;
+}
+
+.ifrmaeBanner {
+  height: 100vh;
+  width: 100%;
+  border-radius: 8px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+.banner_stuff h1 {
+  font-family: 'Ubuntu', cursive;
+  font-size: 3.45rem;
+  letter-spacing: 1px;
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+.banner_stuff p {
+  text-align: justify;
+  font-family: 'Roboto Slab', serif;
+  font-size: 15px;
+  word-spacing: 0px;
+  color: #ffffff;
+  line-height: 22px;
+  margin-bottom: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.banner_stuff .playBtn {
+  padding: 7px 28px;
+  border: 1px solid white;
+  border-radius: 7px;
+  color: black;
+  font-weight: 700;
+  background-color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  transition: all 250ms;
+}
+
+.playBtn:hover {
+  transform: translateY(-3px);
+  background-color: #dbd8d8;
+}
+
+.banner_stuff .InfoBtn {
+  padding: 7px 28px;
+  border: 1px solid white;
+  border-radius: 7px;
+  margin-left: 14px;
+  color: black;
+  font-weight: 700;
+  background-color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  transition: all 250ms;
+}
+
+.InfoBtn:hover {
+  transform: translateY(-3px);
+  background-color: gray;
+}
+
+.play_svg {
+  height: 28px;
+  width: 28px;
+  color: black;
+}
