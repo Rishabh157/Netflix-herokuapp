@@ -11,12 +11,12 @@ import Movies from "./Movies";
 import Footer from "./Footer";
 import requests from "../ConstantUrl/Request";
 import BaseUrl from "../ConstantUrl/BaseUrl";
+import GET__DATA from "../ConstantUrl/Axios";
+import API_KEY from "../ConstantUrl/API";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { LoadingSearchBar } from "./Loading";
 import Banner from "./Banner";
-import GET__DATA from "../ConstantUrl/Axios";
-import API_KEY from "../ConstantUrl/API";
 import { ImCross } from "react-icons/im";
 
 export default class Navbar extends Component {
