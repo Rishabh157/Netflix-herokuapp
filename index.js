@@ -6,15 +6,22 @@ const cors = require("cors");
 const bcrypt = require("bcrypt");
 const Ragister = require("./NetflixData/Ragister");
 
+const config = require('config');
+console.log(config)
+
 const app = express();
 app.use(bodyParser.json({ extended: false }))
 app.use(cors())
 
 
 // mongoose.connect('mongodb://localhost:27017/Netflix')
-const connection_url = 'mongodb+srv://whatsapp:7euPB782SLtov0zU@cluster0.jnuxr.mongodb.net/Netflix?retryWrites=true&w=majority'
-mongoose.connect(connection_url, {
-  useNewUrlParser: true,
+const DATABASE = 'mongodb+srv://whatsapp:7euPB782SLtov0zU@cluster0.jnuxr.mongodb.net/Netflix?retryWrites=true&w=majority'
+// const DB = process.env.DATABASE
+// const connection_url = DB
+// console.log(connection_url)
+
+mongoose.connect(DATABASE, {
+  useNewUrlParser: true
 }).then((result) => {
   console.log("connection successful")
 }).catch((err) => {
