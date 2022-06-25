@@ -13,7 +13,13 @@ app.use(cors())
 
 // mongoose.connect('mongodb://localhost:27017/Netflix')
 const connection_url = 'mongodb+srv://whatsapp:7euPB782SLtov0zU@cluster0.jnuxr.mongodb.net/Netflix?retryWrites=true&w=majority'
-mongoose.connect(connection_url)
+mongoose.connect(connection_url, {
+  useNewUrlParser: true,
+}).then((result) => {
+  console.log("connection successful")
+}).catch((err) => {
+  console.log("no connection", err)
+});
 
 // Ragister API
 app.post('/ragister', (req, res) => {
