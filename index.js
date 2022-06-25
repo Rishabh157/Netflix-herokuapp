@@ -1,32 +1,35 @@
+require("dotenv").config({ path: "./config.env" })
 const express = require("express");
-const port = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4000;
 const bodyParser = require("body-parser");
-const mongoose = require("mongoose");
 const cors = require("cors");
 const bcrypt = require("bcrypt");
+const path = require('path');
 const Ragister = require("./NetflixData/Ragister");
-
-// const config = require('config');
-// console.log(config)
+const connectDB = require("./config/db");
 
 const app = express();
 app.use(bodyParser.json({ extended: false }))
 app.use(cors())
 
 
-// mongoose.connect('mongodb://localhost:27017/Netflix')
-const DATABASE = 'mongodb+srv://whatsapp:7euPB782SLtov0zU@cluster0.jnuxr.mongodb.net/Netflix?retryWrites=true&w=majority'
-// const DB = process.env.DATABASE
-// const connection_url = DB
-// console.log(connection_url)
+// const DATABASE = 'mongodb+srv://whatsapp:7euPB782SLtov0zU@cluster0.jnuxr.mongodb.net/Netflix?retryWrites=true&w=majority'
 
-mongoose.connect(DATABASE, {
-  useNewUrlParser: true
-}).then((result) => {
-  console.log("connection successful")
-}).catch((err) => {
-  console.log("no connection", err)
-});
+connectDB()
+
+
+// this part is conncet our all api to frontend form
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "netflixC/build")));
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'netflixC', 'build', 'index.html'))
+  })
+} else {
+  app.get('/', (req, res) => {
+    res.send("API RUNNING.....")
+  })
+}
 
 // Ragister API
 app.post('/ragister', (req, res) => {
@@ -103,12 +106,9 @@ app.post('/get-update-email', (req, res) => {
 })
 
 
-// heroku term
 
-if (process.env.NODE_ENV == "production") {
-  app.use(express.static("netflixC/build"))
-}
 
-app.listen(port, () => {
-  console.log(`localhost://127.0.0.1:${port} is Running....`)
+
+app.listen(PORT, () => {
+  console.log(`localhost://127.0.0.1:${PORT} is Running....`)
 })
