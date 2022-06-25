@@ -6,8 +6,8 @@ const cors = require("cors");
 const bcrypt = require("bcrypt");
 const Ragister = require("./NetflixData/Ragister");
 
-const config = require('config');
-console.log(config)
+// const config = require('config');
+// console.log(config)
 
 const app = express();
 app.use(bodyParser.json({ extended: false }))
