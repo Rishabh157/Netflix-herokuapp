@@ -14,7 +14,7 @@ import BaseUrl from "../ConstantUrl/BaseUrl";
 import GET__DATA from "../ConstantUrl/Axios";
 import API_KEY from "../ConstantUrl/API";
 import { Link } from "react-router-dom";
-import axios from "axios";
+import DomainUrl from "../ConstantUrl/DomainUrls";
 import { LoadingSearchBar } from "./Loading";
 import Banner from "./Banner";
 import { ImCross } from "react-icons/im";
@@ -198,7 +198,7 @@ export default class Navbar extends Component {
     document.title = "Home - Netflix";
     let _id = await localStorage.getItem("userId")
 
-    axios.post("http://127.0.0.1:4000/get-user-name", { _id })
+    DomainUrl.post("get-user-name", { _id })
       .then(async (result) => {
         await this.setState({ username: result.data.getInfo.firstName })
       }).catch((err) => {

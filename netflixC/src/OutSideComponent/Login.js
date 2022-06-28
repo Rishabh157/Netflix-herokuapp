@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import "./styles/boxemail.css";
 import { Link } from 'react-router-dom';
 import netflix from "./icons/netflix.svg";
-import axios from 'axios';
 import toast, { Toaster } from "react-hot-toast";
 import Footer from "./Footer";
+import DomainUrls from "../ConstantUrl/DomainUrls"
 
 export default class Login extends Component {
   constructor(props) {
@@ -23,7 +23,7 @@ export default class Login extends Component {
   loginSubmit = () => {
     let { email, password } = this.state
     if (email !== "" && password !== "") {
-      axios.post("http://127.0.0.1:4000/get-ragister", { email, password })
+      DomainUrls.post("get-ragister", { email, password })
         .then(async (res) => {
           let situation = res.data
           if (situation.status !== "Founded") {

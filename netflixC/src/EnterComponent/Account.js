@@ -11,6 +11,7 @@ import axios from "axios";
 import { Link } from 'react-router-dom';
 import { HashPass } from '../OutSideComponent/Validation';
 import Footer from "./Footer";
+import DomainUrl from "../ConstantUrl/DomainUrls";
 import toast, { Toaster } from "react-hot-toast";
 
 export default class Account extends Component {
@@ -99,7 +100,7 @@ export default class Account extends Component {
                   }
                   if (regEmail(email)) {
                     const _id = this.state.userId
-                    axios.post("http://127.0.0.1:4000/get-update-email", { _id, email })
+                    DomainUrl.post("get-update-email", { _id, email })
                       .then((result) => {
                         toast.success("Successfully Updated")
                       }).catch((err) => {
@@ -147,7 +148,7 @@ export default class Account extends Component {
     let ans = HashPass(len)
     this.setState({ userId: _id, hashP: ans })
 
-    axios.post("http://127.0.0.1:4000/get-user-info-account", { _id })
+    DomainUrl.post("get-user-info-account", { _id })
       .then((result) => {
         const { email, cardNumber, firstName, date } = result.data.infouser
         this.setState({ email: email, username: firstName, cardNumber: cardNumber, date: date })

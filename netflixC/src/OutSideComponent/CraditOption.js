@@ -6,9 +6,9 @@ import mastercard from "./icons/mastercard.svg";
 import americancard from "./icons/american.svg";
 import dinersclub from "./icons/dinersclub.png";
 import { Link } from 'react-router-dom';
-import axios from 'axios';
 import Footer from './Footer';
 import toast, { Toaster } from "react-hot-toast";
+import DomainUrls from "../ConstantUrl/DomainUrls"
 
 export default class CraditOption extends Component {
   constructor(props) {
@@ -31,7 +31,7 @@ export default class CraditOption extends Component {
     let { email, password, firstName, lastName, cardNumber, date, cvv, plan, price } = this.state
     let data = { email, password, firstName, lastName, cardNumber, date, cvv, plan, price }
     if (firstName !== "" || lastName !== "") {
-      axios.post("http://127.0.0.1:4000/ragister", data)
+      DomainUrls.post("ragister", data)
         .then(async (res) => {
           let { _id } = res.data.msg
           await localStorage.setItem("userId", _id)
