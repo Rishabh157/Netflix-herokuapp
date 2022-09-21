@@ -13,8 +13,6 @@ app.use(bodyParser.json({ extended: false }))
 app.use(cors())
 
 
-// const DATABASE = 'mongodb+srv://whatsapp:7euPB782SLtov0zU@cluster0.jnuxr.mongodb.net/Netflix?retryWrites=true&w=majority'
-
 connectDB()
 
 
